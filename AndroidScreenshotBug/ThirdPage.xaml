@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage
+    x:Class="AndroidScreenshotBug.ThirdPage"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+
+    <VerticalStackLayout
+        Padding="30,0"
+        Spacing="25"
+        VerticalOptions="Center">
+
+        <Label Style="{StaticResource Headline}" Text="Non modal" />
+
+        <Label Style="{StaticResource SubHeadline}" Text="Take a screenshot and notice it gives a black image" />
+
+        <Button
+            x:Name="CounterBtn"
+            Clicked="GoBackClicked"
+            HorizontalOptions="Fill"
+            Text="Go Back" />
+    </VerticalStackLayout>
+
+</ContentPage>
